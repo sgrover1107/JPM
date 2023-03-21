@@ -1,0 +1,12 @@
+chsh -s /bin/bash
+
+#!/bin/bash
+mkdir -p ~/Documents/Accelerator
+touch ~/Documents/Accelerator/test.txt
+current_date_time=$(date)
+echo "Current date and time: $current_date_time" >> ~/Documents/Accelerator/test.txt
+echo "Script file name: $0" >> ~/Documents/Accelerator/test.txt
+echo "Operating system: $(sw_vers -productName) $(sw_vers -productVersion)" >> ~/Documents/accelerator/test.txt
+echo "RAM available: $(system_profiler SPHardwareDataType | awk '/Memory/{print $2,$3}')B" >> ~/Documents/accelerator/test.txt
+echo "$UID" >> ~/Documents/Accelerator/test.txt
+echo "$USER" >> ~/Documents/Accelerator/test.txt
