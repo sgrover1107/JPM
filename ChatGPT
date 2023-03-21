@@ -1,0 +1,2 @@
+echo "Operating system: $(sw_vers -productName) $(sw_vers -productVersion)" >> ~/Documents/accelerator/test.txt
+echo "RAM available: $(system_profiler SPHardwareDataType | awk '/Memory/{print $2,$3}')B" >> ~/Documents/accelerator/test.txt
