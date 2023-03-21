@@ -1,0 +1,10 @@
+#!/bin/bash
+mkdir -p ~/Documents/Accelerator
+touch ~/Documents/Accelerator/test.txt
+current_date_time=$(date)
+echo "Current date and time: $current_date_time" >> ~/Documents/Accelerator/test.txt
+echo "Script file name: $0" >> ~/Documents/Accelerator/test.txt
+echo "Operating system: $(sw_vers)" >> ~/Documents/Accelerator/test.txt
+echo {ram}
+echo "$UID" >> ~/Documents/Accelerator/test.txt
+echo "$USER" >> ~/Documents/Accelerator/test.txt
